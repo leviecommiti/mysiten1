@@ -21,7 +21,7 @@ require_once("index.php");
     if(!isset($_SESSION["email"]) && !isset($_SESSION["password"])){
 ?>
     <div id="form_register">
-        <h2>Форма регистрации</h2>
+        <h2>Register form</h2>
 
         <form action="register.php" method="post" name="form_register">
             <table class="table_register">
@@ -52,9 +52,10 @@ require_once("index.php");
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <button name="btn_submit_register" type="submit">
+                        <button name="btn_submit_register" value="login" type="submit">
                             login
                         </button>
+
                     </td>
                 </tr>
                 </tbody></table>

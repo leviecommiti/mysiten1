@@ -52,7 +52,7 @@ session_start();
 <body>
 
 <div id="index">
-    <h2>Зарегистрируйтесь или авторизируйтесь</h2>
+    <h2>Register or Sign up</h2>
 
     <div id="auth_block">
     <?php
@@ -62,17 +62,17 @@ session_start();
     ?>
 
         <div id="link_register">
-            <a href="/form_register.php">Регистрация</a>
+            <a href="/form_register.php"><button>Register</button></a>
         </div>
 
         <div id="link_auth">
-            <a href="/form_auth.php">Авторизация</a>
+            <a href="/form_auth.php"><button>Sign up</button></a>
         </div>
     <?php
             }else{
     ?>
         <div id="link_logout">
-                    <a href="/logout.php">Выход</a>
+                    <a href="/logout.php"><button>Exit</button></a>
                 </div>
      <?php
             }

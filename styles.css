@@ -21,6 +21,7 @@
     max-width: 360px;
     margin: 100px 400px;
     padding: 45px;
+    padding-top: 20px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -37,19 +38,20 @@
 }
 
 
-#link_auth a, #link_logout a, #link_register a{
-     font-family: "Roboto", sans-serif;
-     text-transform: uppercase;
-     outline: 0;
-     background: #4CAF50;
-     width: 150px;
-     border: 0;
-     border-radius : 0 0px;
-     padding: 15px;
-     color: #FFFFFF;
-     font-size: 14px;
-     cursor: pointer ;
-     float: left;
+#link_auth a button, #link_logout a button, #link_register a button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 150px;
+    border: 0;
+    border-radius : 0 0px;
+    margin: 0 20px;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer ;
+    float: left;
  }
 
 
@@ -57,12 +59,12 @@
     background: #FFFFFF;
     position: absolute;
     width: 290px;
-    margin: 33% 35%;
+    margin: 30% 35%;
     padding : 20px 50px;
 }
 
 
-#authorized h2{
+h2{
     text-align: center;
 }
 
@@ -80,9 +82,14 @@
     cursor: pointer;
 }
 
- #button_submit_register:hover,#button_submit_register:active,#button_submit_register:focus {
+ #button_submit_register:hover,#button_submit_register:active,#button_submit_register:focus,
+ #link_auth a button:hover,#link_auth a button:active,#link_auth a button:focus,
+ #link_logout a button:hover,#link_logout a button:active,#link_logout a button:focus,
+ #link_register a button:hover,#link_register a button:active,#link_register a button:focus {
      background: #43A047;
  }
+
+
 
  #form_auth a{
      width: 590px;

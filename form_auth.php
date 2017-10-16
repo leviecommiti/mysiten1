@@ -27,7 +27,7 @@ if(!isset($_SESSION["email"]) && !isset($_SESSION["password"])){
 
 
     <div id="form_auth">
-        <h2>Форма авторизации</h2>
+        <h2>Sign up form</h2>
         <form action="auth.php" method="post" name="form_auth">
             <table class="table_register">
 
@@ -47,7 +47,7 @@ if(!isset($_SESSION["email"]) && !isset($_SESSION["password"])){
 
                 <tr>
                     <td colspan="2">
-                        <button name="btn_submit_auth" type="submit">
+                        <button name="btn_submit_auth" value ="signup" type="submit">
                             login
                         </button>
                     </td>
