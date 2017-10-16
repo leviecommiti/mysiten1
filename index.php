@@ -7,7 +7,7 @@ session_start();
 <head>
     <title>Форма регистрации и авторизации</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){

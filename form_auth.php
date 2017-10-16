@@ -29,27 +29,27 @@ if(!isset($_SESSION["email"]) && !isset($_SESSION["password"])){
     <div id="form_auth">
         <h2>Форма авторизации</h2>
         <form action="auth.php" method="post" name="form_auth">
-            <table>
+            <table class="table_register">
 
                 <tbody><tr>
-                    <td> Email: </td>
                     <td>
-                        <input name="email" required="required" type="email"><br>
+                        <input name="email" placeholder = "Email" required="required" type="email"><br>
                         <span id="valid_email_message" class="mesage_error"></span>
                     </td>
                 </tr>
 
                 <tr>
-                    <td> Пароль: </td>
                     <td>
-                        <input name="password" placeholder="минимум 6 символов" required="required" type="password"><br>
+                        <input name="password" placeholder="Password" required="required" type="password"><br>
                         <span id="valid_password_message" class="mesage_error"></span>
                     </td>
                 </tr>
 
                 <tr>
                     <td colspan="2">
-                        <input name="btn_submit_auth" value="Войти" type="submit">
+                        <button name="btn_submit_auth" type="submit">
+                            login
+                        </button>
                     </td>
                 </tr>
                 </tbody></table>

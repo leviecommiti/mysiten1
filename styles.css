@@ -1,4 +1,4 @@
-.clear{
+ .clear{
     clear: both;
 }
 
@@ -14,67 +14,120 @@
     text-align: center;
 }
 
-#header, #footer{
-    border: 2px solid #000;
-}
-
-#header{
-    padding-left: 10px;
-}
-
-#footer{
+#index{
     position: absolute;
-    right: 0;
-    width: 100%;
-}
-
-#header h2, #footer h2{
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 100px 400px;
+    padding: 45px;
     text-align: center;
-    margin: 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 #auth_block{
-    width: 290px;
-    float: right;
+    width: 590px;
+    float: bottom;
+    display : inline-block;
 }
 
-#auth_block a{
-    display: block;
-    padding: 10px;
-    border-radius: 10px;
-    color: #fff;
-    width: 110px;
-    height: 30px;
-    text-decoration: none;
-}
 
 #auth_block a:hover{
     text-decoration: underline;
 }
 
-#link_register{
-    float: left;
-}
 
-#link_auth, #link_logout{
-    float: right;
-}
+#link_auth a, #link_logout a, #link_register a{
+     font-family: "Roboto", sans-serif;
+     text-transform: uppercase;
+     outline: 0;
+     background: #4CAF50;
+     width: 150px;
+     border: 0;
+     border-radius : 0 0px;
+     padding: 15px;
+     color: #FFFFFF;
+     font-size: 14px;
+     cursor: pointer ;
+     float: left;
+ }
 
-#link_register a{
-    background: #54d854;
-}
-
-#link_auth a, #link_logout a{
-    background: #4e4eec;
-    text-align: center;
-}
 
 #form_register, #form_auth{
-    width: 300px;
-    margin: 0 auto;
+    background: #FFFFFF;
+    position: absolute;
+    width: 290px;
+    margin: 33% 35%;
+    padding : 20px 50px;
 }
 
 
 #authorized h2{
     text-align: center;
 }
+
+.button_submit_register{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    border-radius : 0 0px;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+ #button_submit_register:hover,#button_submit_register:active,#button_submit_register:focus {
+     background: #43A047;
+ }
+
+ #form_auth a{
+     width: 590px;
+     border-radius: 0 0px;
+ }
+
+
+ .table_register tbody tr input{
+     font-family: "Roboto", sans-serif;
+     outline: 0;
+     background: #f2f2f2;
+     width: 100%;
+     border: 0;
+     margin: 0 13px 15px;
+     padding: 15px;
+     box-sizing: border-box;
+     font-size: 14px;
+ }
+ .table_register tbody tr button{
+     font-family: "Roboto", sans-serif;
+     text-transform: uppercase;
+     outline: 0;
+     background: #4CAF50;
+     width: 100%;
+     border: 0;
+     margin: 0 13px 15px;
+     padding: 15px;
+     color: #FFFFFF;
+     font-size: 14px;
+     -webkit-transition: all 0.3 ease;
+     transition: all 0.3 ease;
+     cursor: pointer;
+ }
+ .table_register tbody tr button:hover,.table_register tbody tr button:active,.table_register tbody tr button:focus {
+     background: #43A047;
+ }
+
+
+ body {
+     background: #76b852; /* fallback for old browsers */
+     background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+     background: -moz-linear-gradient(right, #76b852, #8DC26F);
+     background: -o-linear-gradient(right, #76b852, #8DC26F);
+     background: linear-gradient(to left, #76b852, #8DC26F);
+
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+ }

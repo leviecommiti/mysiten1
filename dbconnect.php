@@ -8,8 +8,8 @@
     header('Content-Type: text/html; charset=utf-8');
 
     $server = "localhost";
-    $username = "first_name";
-    $password = "password";
+    $username = "root";
+    $password = "12345";
     $database = "DB_1";
 
     $mysqli = new mysqli($server,$username,$password,$database);
@@ -20,5 +20,5 @@
     }
 
     $mysqli->set_charset('utf8');
-    $localhost = "localhost/";
+    $localhost = "http://localhost";
 ?>
